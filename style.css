@@ -1,0 +1,52 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Slider */
+.slider-img {
+    height: 80vh;
+    object-fit: cover;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+/* Section */
+.section-title {
+    font-weight: bold;
+    color: #198754;
+}
+
+/* Cards */
+.custom-card {
+    border: none;
+    border-radius: 15px;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.custom-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+.footer {
+    background-color: #198754;
+    color: white;
+    padding: 20px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
