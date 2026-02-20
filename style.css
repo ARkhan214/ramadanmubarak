@@ -5,18 +5,19 @@ body {
 
 /* Slider */
 .slider-img {
-    height: 80vh;
+    height: 85vh;
     object-fit: cover;
 }
 
+/* Hero Text */
 .hero-title {
-    font-size: 5rem;
+    font-size: clamp(2rem, 6vw, 5rem);
     font-weight: 800;
     text-shadow: 3px 3px 12px rgba(0,0,0,0.8);
 }
 
 .hero-subtitle {
-    font-size: 2rem;
+    font-size: clamp(1rem, 3vw, 2rem);
     font-weight: 500;
     text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
 }
@@ -44,15 +45,23 @@ body {
 .footer {
     background-color: #198754;
     color: white;
-    padding: 20px;
+    padding: 25px 0;
 }
 
-.footer a {
+.footer .social-links a {
+    display: inline-block;
+    margin: 5px 10px;
     color: white;
     text-decoration: none;
-    margin: 0 10px;
 }
 
-.footer a:hover {
+.footer .social-links a:hover {
     text-decoration: underline;
+}
+
+/* Mobile Fix */
+@media (max-width: 768px) {
+    .slider-img {
+        height: 60vh;
+    }
 }
